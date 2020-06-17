@@ -7,5 +7,11 @@
     "Cappuccino" : "Cappuccino",
     "Macciato" : "Macciato",
     "Mocha" : "Mocha",
-    "Latte" : "Latte"
+    "Latte" : "Latte",
+    
+    "ესპრესო" : "Espresso",
+    "კაპუჩინო" : "Cappuccino",
+    "მაკიატო" : "Macciato",
+    "მოკა" : "Mocha",
+    "ლატე" : "Latte"
 }

@@ -59,7 +59,8 @@ class HomeViewController: UIViewController {
         let localize = Localize.shared
         localize.update(language: "ge")
         
-        //coffeeModels[0].name = "Espresso".localized
+        self.update()
+        
         tableView.reloadData()
         
     }
@@ -70,11 +71,17 @@ class HomeViewController: UIViewController {
         let localize = Localize.shared
         localize.update(language: "en")
         
-//        for i in 0..<coffeeModels.count {
-//            coffeeModels[i].name = "\(coffeeModels[i].name)".localized
-//        }
+        self.update()
+        
         tableView.reloadData()
     }
+    
+    func update() {
+        for i in 0..<coffeeModels.count {
+            coffeeModels[i].name = "\(coffeeModels[i].name)".localized
+        }
+    }
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -86,12 +93,6 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "home_cell", for: indexPath) as! HomeCell
-        
-        
-//        cell.coffeeImage.image = coffees[indexPath.row].coffeeImage
-//        cell.coffeeNameLabel.text = coffees[indexPath.row].coffeeName
-        
-//        cell.backgroundColor = UIColor(red: 250/255, green: 244/255, blue: 238/255, alpha: 1)
         
         cell.coffeeViewModel = coffeeModels[indexPath.row]
         

@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         localize.update(provider: .json)
         // Set your file name
         localize.update(fileName: "lang")
-        // Set your default languaje.
+        // Set your default language.
         localize.update(defaultLanguage: "en")
         // If you want change a user language, different to default in phone use thimethod.
-        localize.update(language: "ge")
+        //localize.update(language: "ge")
         
         return true
     }
