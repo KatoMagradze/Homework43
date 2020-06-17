@@ -1,0 +1,16 @@
+PODS:
+  - Localize (2.3.0)
+
+DEPENDENCIES:
+  - Localize (~> 2.3.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Localize
+
+SPEC CHECKSUMS:
+  Localize: cb1ae53ed73decaad0dce217806ed983091913f5
+
+PODFILE CHECKSUM: 6e2f3951eebe1632192ee13c880b854f3e59591c
+
+COCOAPODS: 1.9.3
